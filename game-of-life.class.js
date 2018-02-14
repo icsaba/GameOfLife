@@ -39,8 +39,7 @@ export class GameOfLife {
           x + i < this.dimension,
           y + j >= 0,
           y + j < this.dimension,
-          i !== 0,
-          j !== 0
+          i !== 0 || j !== 0,
         ];
 
         if (rules.every(rule => rule === true)) {
