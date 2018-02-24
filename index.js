@@ -14,7 +14,7 @@ function generateBinary(dimension) {
   return bin.slice(0, dim)
 }
 
-const dimension = 23;
+const dimension = 30;
 const binary = generateBinary(dimension);
 const gameOfLife = new GameOfLife(dimension, binary);
 gameOfLife.print();
